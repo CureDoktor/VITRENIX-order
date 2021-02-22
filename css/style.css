@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Oxygen";
+  src: url("/fonts/Oxygen-Regular.ttf") format("truetype");
+}
+.field {
+  background-color: #0d0d0d;
+}
+.homeOrderNow {
+  color: #d9d9d9;
+  font-family: "Steelfish Rg";
+  font-size: 2rem;
+  padding-top: 10px;
+}
+.rectangle {
+  background-image: url(/images/rectangleBackground.png);
+}
+.rectangleText {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Steelfish Rg";
+  text-align: center;
+  filter: drop-shadow(1.172px 2.762px 0.5px #1a0f02);
+  font-size: 4rem;
+  width: 80%;
+  margin: auto;
+  padding-top: 40px;
+  letter-spacing: 2px;
+}
+.rectangleText1 {
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oxygen";
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  padding-top: 40px;
+  line-height: 2rem;
+}
+.rectangleText2 {
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oxygen";
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.whiteLine {
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+}
+.text1 {
+  color: #d9d9d9;
+  font-weight: bold;
+  font-family: "Steelfish Rg";
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.button {
+  position: relative;
+  bottom: 55px;
+  left: 205px;
+  background: none;
+}
+.rectangle2 {
+  margin-top: -55px;
+}
+.r1 {
+  margin-top: 60px;
+}
+.button2 {
+  position: relative;
+  bottom: 55px;
+  left: 205px;
+}
+.oneMonth1 {
+  display: none;
+}
+.sixMonth1 {
+  display: none;
+}
+.threeMonth1 {
+  display: none;
+}
+.buttonv2 {
+  position: relative;
+  bottom: 55px;
+  left: 195px;
+  background: none;
+  border: 0;
+  outline: 0 !important;
+}

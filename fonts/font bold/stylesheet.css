@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Steelfish Rg';
+    src: url('SteelfishRg-Bold.eot');
+    src: url('SteelfishRg-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SteelfishRg-Bold.woff2') format('woff2'),
+        url('SteelfishRg-Bold.woff') format('woff'),
+        url('SteelfishRg-Bold.ttf') format('truetype'),
+        url('SteelfishRg-Bold.svg#SteelfishRg-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

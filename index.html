@@ -57,16 +57,160 @@
                     <div class="col-md-4">
                         <div class="threeMonth" id="threeMonth" onclick="threeMonths()">
                             <img src="images/rectangle3.png" alt="rectangle3" class="rectangle3">
-                            <img src="images/button.png" alt="button" class="button">
+                            <img src="images/button.png" alt="button" class="button img-fluid">
                         </div>
                         <div class="threeMonth1" id="threeMonth1">
                             <img src="images/rectangle33.png" alt="rectangle3" class="rectangle3">
                             <button class="buttonv2">
-                            <img src="images/button2.png" alt="button">
+                                <img src="images/button2.png" alt="button">
                             </button>
                         </div>
                     </div>
                 </div>
+                <p class="startOrder">START YOUR ORDER BELOW</p>
+                <img src="images/pinkLine.png" alt="Pink Line" class="pinkLine">
+                <div class="partOne" id="partOne">
+                    <div class="shippingInfo">
+                        <p class="shippingInfoText">1. YOUR SHIPPING INFORMATION</p>
+                    </div>
+                    <div class="row r2">
+                        <div class="offset-md-1 col-md-5">
+                            <label for="firstName" class="col-form-label">FIRST NAME <span class="red">*</span></label>
+                            <input type="text" class="form-control input-md input1">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="lastName" class="col-form-label">LAST NAME<span class="red">*</span></label>
+                            <input type="text" class="form-control input-md input1">
+                        </div>
+                    </div>
+                    <div class="row r">
+                        <div class="offset-md-1 col-md-5">
+                            <label for="fields_email" class="col-form-label">EMAIL<span class="red">*</span></label>
+                            <input type="text" class="form-control input-md input1">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="phone" class="col-form-label">PHONE NUMBER<span class="red">*</span></label>
+                            <input type="text" class="form-control input-md input1">
+                        </div>
+                    </div>
+                    <div class="row r">
+                        <div class="offset-md-1 col-md-5">
+                            <label for="firstName" class="col-form-label">STREET ADDRESS (INCLUDING APT #) <span class="red">*</span></label>
+                            <input type="text" class="form-control input-md input1">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="lastName" class="col-form-label">CITY<span class="red">*</span></label>
+                            <input type="text" class="form-control input-md input1">
+                        </div>
+                    </div>
+                    <div class="row r">
+                        <div class="offset-md-1 col-md-5">
+                            <label for="shipping Address1" class="col-form-label">COUNTRY<span class="red">*</span></label>
+                            <select type="text" class="form-control input-md input1"></select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="lastName" class="col-form-label">STATE/PROVENCE<span class="red">*</span></label>
+                            <select type="text" class="form-control input-md input2"></select>
+                        </div>
+                        <div class="col-md-2.5">
+                            <label for="lastName" class="col-form-label">ZIP CODE<span class="red">*</span></label>
+                            <input type="text" class="form-control input-md input3">
+                        </div>
+                    </div>
+                    <button class="buttonContinue" onclick="partOneContinue()">CONTINUE</button>
+                    <img src="images/underContinue.png" alt="Under Continue" class="underContinue">
+                </div>
+
+                <div class="partTwo" id="partTwo">
+                    <div class="paymentOption">
+                        <p class="paymenOptionText">2. PAYMENT OPTION</p>
+                    </div>
+                    <div class="row r3">
+                        <div class="offset-md-2 col-md-4">
+                            <img src="images/ccNORMAL.png" alt="CC NORMAL" class="img-fluid ccNormal" id="ccNormal" onclick="creditCard()">
+                            <img src="images/ccSELECTED.png" alt="CC SELECTED" class="img-fluid ccSelected" id="ccSelected">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/paypalNORMAL.png" alt="PAYPAL NORMAL" class="img-fluid paypalNormal" id="paypalNormal" onclick="paypal()">
+                            <img src="images/paypalSELECTED.png" alt="PAYPAL SELECTED" class="img-fluid paypalSelected" id="paypalSelected">
+                        </div>
+                    </div>
+                    <button class="buttonContinue" onclick="partTwoContinue()">CONTINUE</button>
+                    <img src="images/underContinue.png" alt="Under Continue" class="underContinue">
+                </div>
+                <div class="partThree" id="partThree">
+                    <div class="debitCredit">
+                        <p class="debitCreditText">3. DEBIT / CREDIT CARD INFO</p>
+                    </div>
+                    <div class="row">
+                        <div class="offset-md-1 col-md-5">
+                            <label for="firstName" class="col-form-label">CARD NUMBER<span class="red">*</span></label>
+                            <input type="text" class="form-control input-md input1">
+                            <label for="firstName" class="col-form-label">SECURITY CODE<span class="red">*</span></label>
+                            <input type="text" class="form-control input-md input1">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="col-form-label">EXPERATION DATE<span class="red">*</span></label>
+                                    <select type="text" class="form-control input-md input2"></select>
+                                </div>
+                                <div class="col-md-6">
+                                    <select type="text" class="form-control input-md input2 i3"></select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row r4">
+                        <div class="offset-md-1 col-md-7">
+                            <table class="table">
+                                <thead>
+                                  <tr> 
+                                    <th scope="col" class="tableRed">PRODUCT</th>
+                                    <th scope="col"></th>
+                                    <th scope="col" class="tableRed" >PRICE</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row"><img src="images/VITRENIXBottle.png" alt="VITRENIX Bottle" class="bottle"></th>
+                                    <td><p class="tableText">Vitremix </br> 6 Full Month Supply</p>
+                                    <p class="tableText1">Normally $419.70 <span>|</span> Save $300 <span>|</span> Only $2.66/Day</p>
+                                    </td>
+                                    <td>$119.95</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><img src="images/shipIcon.png" alt="Ship Icon" class="shipIcon"></th>
+                                    <td><p>Express Shipping</p>
+                                    <p>(1-2 Day Shipping)</p>
+                                    </td>
+                                    <td>FREE</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="col-md-3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lastField">
+            <div class="container">
+                <div class="row r15">
+                    <div class="col-md-6">
+                        <img src="images/VITRENIX.png" alt="vitrenix" class="img-fluid vitrenix2">
+                        <p class="lastFieldText">Copyright 2021 <span class="red1">|</span> Vitrenix Inc <span class="red1">|</span> All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="lastFieldFlex">
+                            <img src="images/phone.png" alt="phone1" class="img-fluid phone1">
+                            <p class="lastFieldText1">HOME <span class="red1">|</span>ORDER</p>
+                        </div>
+                        <p class="lastFieldText2">Privacy Policy <span class="red1">|</span> Terms & Conditions <span class="red1">|</span> Return Policy <span class="red1">|</span> DMCA</p>
+                    </div>
+                </div>    
             </div>
         </div>
     </div>   

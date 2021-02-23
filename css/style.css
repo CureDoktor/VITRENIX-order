@@ -5,6 +5,10 @@
 .field {
   background-color: #0d0d0d;
 }
+.wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 .homeOrderNow {
   color: #d9d9d9;
   font-family: "Steelfish Rg";
@@ -24,7 +28,7 @@
   width: 80%;
   margin: auto;
   padding-top: 40px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .rectangleText1 {
   color: #ffffff;
@@ -57,7 +61,7 @@
   font-family: "Steelfish Rg";
   text-align: center;
   font-size: 4rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding-top: 50px;
   padding-bottom: 30px;
 }
@@ -94,4 +98,215 @@
   background: none;
   border: 0;
   outline: 0 !important;
+}
+.startOrder {
+  color: #d9d9d9;
+  font-weight: bold;
+  font-family: "Steelfish Rg";
+  text-align: center;
+  font-size: 4.2rem;
+  letter-spacing: 1px;
+  padding-top: 50px;
+}
+.pinkLine {
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.shippingInfo {
+  background-color: #262626;
+  border: 0px solid #090a0a;
+}
+.shippingInfoText {
+  color: #d9d9d9;
+  font-weight: bold;
+  font-family: "Steelfish Rg";
+  font-size: 3rem;
+  margin-left: 30px;
+}
+.r2 {
+  margin-top: 70px;
+}
+.input1 {
+  border-radius: 21px;
+  background-color: #262626;
+  border: 1px solid #737373;
+  width: 85%;
+  margin: auto;
+}
+.red {
+  color: red;
+}
+.input2 {
+  border-radius: 21px;
+  background-color: #262626;
+  border: 1px solid #737373;
+  width: 105%;
+  margin-left: 35px;
+}
+.input3 {
+  border-radius: 21px;
+  background-color: #262626;
+  border: 1px solid #737373;
+  width: 78%;
+  margin-left: 45px;
+}
+.buttonContinue {
+  border-radius: 30px;
+  background-color: #dd003e;
+  width: 35%;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  color: #ffffff;
+  font-family: "Steelfish Rg";
+  text-align: center;
+  font-size: 2rem;
+  outline: 0 !important;
+}
+.underContinue {
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+  padding-bottom: 250px;
+}
+.lastField {
+  background-color: black;
+}
+.lastFieldFlex {
+  display: flex;
+}
+.lastFieldText1 {
+  font-family: "Steelfish Rg";
+  color: #737373;
+  font-size: 1.6rem;
+  margin-bottom: 0px;
+  margin-top: -8px;
+  margin-left: 60px;
+}
+.lastFieldText {
+  color: #737373;
+  font-weight: 400;
+  font-family: "Oxygen";
+  font-size: 0.85rem;
+  padding-top: 20px;
+}
+.red1 {
+  color: #dd003e;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.lastFieldText2 {
+  color: #737373;
+  font-weight: 400;
+  font-family: "Oxygen";
+  font-size: 0.85rem;
+  padding-left: 87.5px;
+  margin-top: 30px;
+}
+.phone1 {
+  height: 22px;
+}
+.r15 {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+label {
+  padding-left: 30px;
+  color: #a6a6a6;
+  font-weight: 400;
+  font-family: "Oxygen";
+}
+.partOne {
+  display: block;
+}
+.partTwo {
+  display: none;
+}
+.partThree {
+  display: none;
+}
+.paymentOption {
+  background-color: #262626;
+  border: 0px solid #090a0a;
+}
+.paymenOptionText {
+  color: #d9d9d9;
+  font-weight: bold;
+  font-family: "Steelfish Rg";
+  font-size: 3rem;
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+.r3 {
+  margin-top: 80px;
+  padding-bottom: 100px;
+}
+.ccNormal {
+  padding-right: 15px;
+}
+.paypalNormal {
+  padding-left: 15px;
+}
+.ccSelected {
+  padding-right: 15px;
+  display: none;
+}
+.paypalSelected {
+  padding-left: 15px;
+  display: none;
+}
+.debitCredit {
+  background-color: #262626;
+  border: 0px solid #090a0a;
+}
+.debitCreditText {
+  color: #d9d9d9;
+  font-weight: bold;
+  font-family: "Steelfish Rg";
+  font-size: 3rem;
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+.i3 {
+  margin-top: 37px;
+}
+.partOne {
+  display: none;
+}
+.partTwo {
+  display: none;
+}
+.partThree {
+  display: block;
+}
+.r4 {
+  margin-top: 100px;
+}
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+.tableRed {
+  color: #dd003e;
+  font-weight: 400;
+  font-family: "Oxygen";
+}
+tr td:nth-child(3) {
+  text-align: right;
+}
+.table th:nth-child(3) {
+  text-align: right;
+}
+tr td:nth-child(2) p {
+  margin-bottom: 0px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top: 0px;
+  border-bottom: 1px solid gray;
 }

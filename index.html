@@ -19,7 +19,7 @@
                     <img src="images/VITRENIX.png" alt="vitrenix" class="img-fluid vitrenix">
                     <img src="images/phone.png" alt="phone" class="img-fluid phone">
                     <script src="js/main.js"></script>
-                    <p class="homeOrderNow">HOME    |    ORDER NOW </p>
+                    <p class="homeOrderNow"> <a href="https://www.vitrenix.com" class="homeOrderNow">HOME</a>    |   <a href="https://www.vitrenix.com/order" class="homeOrderNow">ORDER NOW</a>  </p>
                 </div>
                 <div class="rectangle">
                     <p class="rectangleText">The solution you've been waiting for is finally here</p>
@@ -33,12 +33,12 @@
                     <div class="col-md-4">
                         <div class="oneMonth" onclick="oneMonth()" id="oneMonth"> 
                          <img src="images/rectangle1.png" alt="rectangle1" class="rectangle1">
-                         <img src="images/button.png" alt="button" class="button">
+                         <img src="images/button.png" alt="button" class="button buttonMobile">
                         </div>
                         <div class="oneMonth1" id="oneMonth1">    
                             <img src="images/rectangle11.png" alt="rectangle1" class="rectangle1">
                             <button class="buttonv2">
-                            <img src="images/button2.png" alt="button">
+                            <img src="images/button2.png" alt="button" class="buttonMobile1">
                             </button>
                         </div>
                     </div>
@@ -46,23 +46,23 @@
                         <div class="sixMonth" id="sixMonth" >
                           <img src="images/rectangle2.png" alt="rectangle1" class="rectangle2">
                           <button class="buttonv2">
-                          <img src="images/button2.png" alt="button">
+                          <img src="images/button2.png" alt="button" class="buttonMobile1">
                           </button>
                         </div>
                         <div class="sixMonth1" id="sixMonth1"  onclick="sixMonths()">
                             <img src="images/rectangle22.png" alt="rectangle1" class="rectangle2">
-                            <img src="images/button.png" alt="button" class="button2">
+                            <img src="images/button.png" alt="button" class="button2 buttonMobile">
                           </div>
                     </div>
                     <div class="col-md-4">
                         <div class="threeMonth" id="threeMonth" onclick="threeMonths()">
                             <img src="images/rectangle3.png" alt="rectangle3" class="rectangle3">
-                            <img src="images/button.png" alt="button" class="button img-fluid">
+                            <img src="images/button.png" alt="button" class="button img-fluid buttonMobile">
                         </div>
                         <div class="threeMonth1" id="threeMonth1">
                             <img src="images/rectangle33.png" alt="rectangle3" class="rectangle3">
                             <button class="buttonv2">
-                                <img src="images/button2.png" alt="button">
+                                <img src="images/button2.png" alt="button" class="buttonMobile1">
                             </button>
                         </div>
                     </div>
@@ -75,46 +75,138 @@
                     </div>
                     <div class="row r2">
                         <div class="offset-md-1 col-md-5">
-                            <label for="firstName" class="col-form-label">FIRST NAME <span class="red">*</span></label>
-                            <input type="text" class="form-control input-md input1">
+                            <label for="firstName" class="col-form-label labelText">FIRST NAME <span class="red">*</span></label>
+                            <div class="form-group">
+                                <input type="text" 
+                                id="firstName"
+                                name="firstName"
+                                class="form-control input-md input1" 
+                                name="firstName"
+                                required=""
+                                pattern="^[a-zA-Z \s]*$"
+                                data-error="Please use only letters"
+                                >
+                                <div class="help-block with-errors"></div>
+                              </div>
                         </div>
                         <div class="col-md-5">
-                            <label for="lastName" class="col-form-label">LAST NAME<span class="red">*</span></label>
-                            <input type="text" class="form-control input-md input1">
+                            <label for="lastName" class="col-form-label labelText">LAST NAME<span class="red">*</span></label>
+                            <div class="form-group">
+                                <input type="text"
+                                id="lastName"
+                                name="lastName"
+                                class="form-control input-md input1" 
+                                pattern="^[a-zA-Z \s]*$"
+                                data-error="Please use only letters"
+                                required
+                                >
+                                <div class="help-block with-errors"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="row r">
                         <div class="offset-md-1 col-md-5">
-                            <label for="fields_email" class="col-form-label">EMAIL<span class="red">*</span></label>
-                            <input type="text" class="form-control input-md input1">
+                            <label for="fields_email" class="col-form-label labelText">EMAIL<span class="red">*</span></label>
+                            <div class="form-group">
+                                <input type="email" 
+                                name="email" 
+                                id="fields_email" 
+                                class="form-control input-md input1" 
+                                data-error="Email address is invalid"
+                                required>
+                                <div class="help-block with-errors"></div>
+                              </div>
                         </div>
                         <div class="col-md-5">
-                            <label for="phone" class="col-form-label">PHONE NUMBER<span class="red">*</span></label>
-                            <input type="text" class="form-control input-md input1">
+                            <label for="phone" class="col-form-label labelText">PHONE NUMBER<span class="red">*</span></label>
+                            <div class="form-group">
+                                <input type="text" 
+                                  name="phone"
+                                  class="form-control input-md input1" 
+                                  pattern="^[0-9]*$"
+                                  minlength="10"
+                                  maxlength="16"
+                                  id="phone"
+                                  data-error="Invalid Phone Number"
+                                  required="">
+                                <div class="help-block with-errors"></div>
+                              </div>
                         </div>
                     </div>
                     <div class="row r">
                         <div class="offset-md-1 col-md-5">
-                            <label for="firstName" class="col-form-label">STREET ADDRESS (INCLUDING APT #) <span class="red">*</span></label>
-                            <input type="text" class="form-control input-md input1">
+                            <label for="firstName" class="col-form-label labelText">STREET ADDRESS (INCLUDING APT #) <span class="red">*</span></label>
+                            <div class="form-group">
+                                <input type="text"
+                                 id="shippingAddress1"
+                                 class="form-control input-md input1" 
+                                 name="shippingAddress1"
+                                 pattern="^[a-zA-Z0-9 \s]*$"
+                                 data-error="Only letters and numbers please."
+                                 required>
+                                <div class="help-block with-errors"></div>
+                            </div>
                         </div>
                         <div class="col-md-5">
-                            <label for="lastName" class="col-form-label">CITY<span class="red">*</span></label>
-                            <input type="text" class="form-control input-md input1">
+                            <label for="lastName" class="col-form-label labelText">CITY<span class="red">*</span></label>
+                            <div class="form-group">
+                                <input type="text" 
+                                  name="shippingCity"
+                                  class="form-control input-md input1" 
+                                  id="shippingCity"
+                                  pattern="^[a-zA-Z0-9 \s]*$"
+                                  data-error="Invalid City name."
+                                  value
+                                  required>  
+                                <div class="help-block with-errors"></div>
+                              </div>
                         </div>
                     </div>
                     <div class="row r">
                         <div class="offset-md-1 col-md-5">
-                            <label for="shipping Address1" class="col-form-label">COUNTRY<span class="red">*</span></label>
-                            <select type="text" class="form-control input-md input1"></select>
+                            <label for="shipping Address1" class="col-form-label labelText">COUNTRY<span class="red">*</span></label>
+                            <div class="form-group">
+                                <select class="form-control input-md input1"
+                                id="shippingCountry" 
+                                name="shippingCountry"
+                                required>
+                                    <option value="" hidden></option>
+                                    <option value="US">UNITED STATES</option>
+                                    <option value="CA">CANADA</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="col-md-2">
-                            <label for="lastName" class="col-form-label">STATE/PROVENCE<span class="red">*</span></label>
-                            <select type="text" class="form-control input-md input2"></select>
+                            <label for="lastName" class="col-form-label labelText">STATE/PROVENCE<span class="red">*</span></label>
+                            <div class=" form-group">
+                                <select class="form-control input-md input2"
+                                id="shippingState"
+                                name="shippingState"
+                                required
+                                >
+                                    <option value="" hidden></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-md-2.5">
-                            <label for="lastName" class="col-form-label">ZIP CODE<span class="red">*</span></label>
-                            <input type="text" class="form-control input-md input3">
+                        <div class="col-md-2">
+                            <label for="lastName" class="col-form-label labelText">ZIP CODE<span class="red">*</span></label>
+                            <div class="form-group">
+                                <input type="text" 
+                                id="shippingZip"
+                                name="shippingZip"
+                                class="form-control input-md input3"    
+                                minlength="5"
+                                pattern="^[a-zA-Z0-9 \s]*$"
+                                maxlength="10"
+                                data-error="Invalid ZIP code."
+                                required>
+                                <div class="help-block with-errors"></div>
+                              </div>
                         </div>
                     </div>
                     <button class="buttonContinue" onclick="partOneContinue()">CONTINUE</button>
@@ -142,28 +234,98 @@
                     <div class="debitCredit">
                         <p class="debitCreditText">3. DEBIT / CREDIT CARD INFO</p>
                     </div>
-                    <div class="row">
+                    <div class="row rDebitCredit">
                         <div class="offset-md-1 col-md-5">
-                            <label for="firstName" class="col-form-label">CARD NUMBER<span class="red">*</span></label>
-                            <input type="text" class="form-control input-md input1">
-                            <label for="firstName" class="col-form-label">SECURITY CODE<span class="red">*</span></label>
-                            <input type="text" class="form-control input-md input1">
+                            <label for="firstName" class="col-form-label labelText">CARD NUMBER<span class="red">*</span></label>
+                            <div class="form-group">
+                                <input type="text" 
+                                class="form-control input-md input1 cardNumber" 
+                                id="creditCardNumber"
+                                name="creditCardNumber"
+                                pattern="^[0-9 -]*$"
+                                minlength="15"
+                                maxlength="20"       
+                                data-error="Please check card number is correct."
+                                data-validate="true"
+                                required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <label for="firstName" class="col-form-label labelText">SECURITY CODE<span class="red">*</span></label>
+                            <div class="form-group">
+                                <input type="text" 
+                                class="form-control input-md input1" 
+                                id="CVV"
+                                name="CVV"
+                                pattern="[0-9]*"
+                                minlength="3"
+                                maxlength="4"
+                                data-error="3-4 digits"
+                                data-validate="true"
+                                required="">
+                                <div class="help-block with-errors"></div>
+                            </div>
                         </div>
                         <div class="col-md-5">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label for="firstName" class="col-form-label">EXPERATION DATE<span class="red">*</span></label>
-                                    <select type="text" class="form-control input-md input2"></select>
+                            <div class="row ">
+                                <div class="col-md-5">
+                                    <label for="firstName" class="col-form-label labelText">EXPERATION DATE<span class="red">*</span></label>
+                                    <div class="form-group">
+                                        <select class="form-control input2"
+                                        id="fields_expmonth"
+                                        name="fields_expmonth"
+                                        data-error="Month Required"
+                                        data-validate="true"
+                                        required>
+                                            <option value hidden>MONTH</option>
+                                            <option value="01">January</option>
+                                            <option value="02">February</option>
+                                            <option value="03">March</option>
+                                            <option value="04">April</option>
+                                            <option value="05">May</option>
+                                            <option value="06">Jun</option>
+                                            <option value="07">July</option>
+                                            <option value="08">August</option>
+                                            <option value="09">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <select type="text" class="form-control input-md input2 i3"></select>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <select class="form-control input-md input2 i3" id="fields_expyear"
+                                        name="fields_expyear"
+                                        data-error="Year Required"
+                                        data-validate="true"
+                                        required>
+                                            <option value hidden>YEAR</option>
+                                            <option value="21">2021</option>
+                                            <option value="22">2022</option>
+                                            <option value="23">2023</option>
+                                            <option value="24">2024</option>
+                                            <option value="25">2025</option>
+                                            <option value="26">2026</option>
+                                            <option value="27">2027</option>
+                                            <option value="28">2028</option>
+                                            <option value="29">2029</option>
+                                            <option value="30">2030</option>
+                                            <option value="31">2031</option>
+                                            <option value="32">2032</option>
+                                            <option value="33">2033</option>
+                                            <option value="34">2034</option>
+                                            <option value="35">2035</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row r4">
-                        <div class="offset-md-1 col-md-7">
-                            <table class="table">
+                        <div class="offset-md-1 col-md-6">
+                            <table class="table t1">
                                 <thead>
                                   <tr> 
                                     <th scope="col" class="tableRed">PRODUCT</th>
@@ -173,26 +335,52 @@
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <th scope="row"><img src="images/VITRENIXBottle.png" alt="VITRENIX Bottle" class="bottle"></th>
+                                    <th scope="row"><img src="images/VITRENIXBottle.png" alt="VITRENIX Bottle" class="img-fluid bottle"></th>
                                     <td><p class="tableText">Vitremix </br> 6 Full Month Supply</p>
                                     <p class="tableText1">Normally $419.70 <span>|</span> Save $300 <span>|</span> Only $2.66/Day</p>
                                     </td>
-                                    <td>$119.95</td>
+                                    <td><p class="tableText2">$119.95</p></td>
                                   </tr>
                                   <tr>
-                                    <th scope="row"><img src="images/shipIcon.png" alt="Ship Icon" class="shipIcon"></th>
-                                    <td><p>Express Shipping</p>
-                                    <p>(1-2 Day Shipping)</p>
+                                    <th scope="row"><img src="images/shipIcon.png" alt="Ship Icon" class="img-fluid shipIcon"></th>
+                                    <td><p class="tableText">Express Shipping</p>
+                                    <p class="tableText1">(1-2 Day Shipping)</p>
                                     </td>
-                                    <td>FREE</td>
+                                    <td><p class="tableText2">FREE</p></td>
                                   </tr>
                                 </tbody>
                               </table>
                         </div>
-                        <div class="col-md-3">
-
+                        <div class="col-md-4">
+                            <div class="tableWrapper">
+                                <table class="table t2">
+                                    <thead>
+                                      <tr> 
+                                        <th scope="col"><p class="tableRed1">Summary</p></th>
+                                        <th></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><p class="estimatedShipping">Estimated Shipping</p></td>
+                                        <td><p class="secondTableRightText">FREE</p></td>
+                                      </tr>
+                                      <tr>
+                                        <td><p class="subtotal">Subtotal</p><p class="tax">Tax</p></td>
+                                        <td><p class="secondTableRightText1">$119.95</p><p class="secondTableRightText1">$0.00</p></td>
+                                      </tr>
+                                      <tr class="bottomBorder">
+                                        <td class="bottomBorder"><p class="orderTotal">Order Total</p></td>
+                                        <td class="bottomBorder"><p class="orderTotalPrice">$119.95</p></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                <p class="secondTableFooter">Always Discreet Shipping</p>
+                            </div>
                         </div>
                     </div>
+                    <button class="buttonContinue" onclick="">COMPLETE ORDER</button>
+                    <img src="images/underContinue.png" alt="Under Continue" class="underContinue3">
                 </div>
             </div>
         </div>
@@ -206,9 +394,9 @@
                     <div class="col-md-6">
                         <div class="lastFieldFlex">
                             <img src="images/phone.png" alt="phone1" class="img-fluid phone1">
-                            <p class="lastFieldText1">HOME <span class="red1">|</span>ORDER</p>
+                            <p class="lastFieldText1"> <a href="https://www.vitrenix.com" class="grayText1">HOME</a> <span class="red1">|</span><a href="https://www.vitrenix.com/order" class="grayText1">ORDER</a></p>
                         </div>
-                        <p class="lastFieldText2">Privacy Policy <span class="red1">|</span> Terms & Conditions <span class="red1">|</span> Return Policy <span class="red1">|</span> DMCA</p>
+                        <p class="lastFieldText2"><a href="https://www.vitrenix.com" class="grayText1" >Privacy Policy</a> <span class="red1">|</span><a href="https://www.vitrenix.com" class="grayText1">Terms & Conditions</a> <span class="red1">|</span><a href="https://www.vitrenix.com/order" class="grayText1">Return Policy</a><span class="red1">|</span><a href="https://www.vitrenix.com/order" class="grayText1">DMCA</a> </p>
                     </div>
                 </div>    
             </div>

@@ -5,9 +5,16 @@
 .field {
   background-color: #0d0d0d;
 }
+button {
+  cursor: pointer;
+}
 .wrapper {
   overflow-x: hidden;
   overflow-y: hidden;
+}
+a:hover {
+  color: #dd003e;
+  text-decoration: none;
 }
 .homeOrderNow {
   color: #d9d9d9;
@@ -137,6 +144,7 @@
 }
 .red {
   color: red;
+  padding-left: 2px;
 }
 .input2 {
   border-radius: 21px;
@@ -149,7 +157,7 @@
   border-radius: 21px;
   background-color: #262626;
   border: 1px solid #737373;
-  width: 78%;
+  width: 110%;
   margin-left: 45px;
 }
 .buttonContinue {
@@ -202,7 +210,7 @@
   font-weight: 400;
   font-family: "Oxygen";
   font-size: 0.85rem;
-  padding-left: 87.5px;
+  padding-left: 98px;
   margin-top: 30px;
 }
 .phone1 {
@@ -218,6 +226,7 @@ label {
   font-weight: 400;
   font-family: "Oxygen";
 }
+
 .partOne {
   display: block;
 }
@@ -270,19 +279,12 @@ label {
   margin-bottom: 0px;
 }
 .i3 {
-  margin-top: 37px;
+  margin-top: 30px;
 }
-.partOne {
-  display: none;
-}
-.partTwo {
-  display: none;
-}
-.partThree {
-  display: block;
-}
+
 .r4 {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .table > tbody > tr > td {
   vertical-align: middle;
@@ -293,20 +295,400 @@ label {
   font-family: "Oxygen";
 }
 tr td:nth-child(3) {
-  text-align: right;
+  text-align: center;
 }
 .table th:nth-child(3) {
-  text-align: right;
+  text-align: center;
 }
 tr td:nth-child(2) p {
   margin-bottom: 0px;
 }
-.table > thead > tr > th,
-.table > tbody > tr > th,
-.table > tfoot > tr > th,
-.table > thead > tr > td,
-.table > tbody > tr > td,
-.table > tfoot > tr > td {
+.t1 > thead > tr > th,
+.t1 > tbody > tr > th,
+.t1 > tfoot > tr > th,
+.t1 > thead > tr > td,
+.t1 > tbody > tr > td,
+.t1 > tfoot > tr > td {
   border-top: 0px;
   border-bottom: 1px solid gray;
+}
+.tableText {
+  color: #d9d9d9;
+  font-weight: 400;
+  font-family: "Oxygen";
+}
+.tableText1 {
+  font-size: 0.8rem;
+  margin-right: 0px;
+  color: #6a6a6a;
+}
+.tableText2 {
+  color: #d9d9d9;
+  font-weight: 400;
+  font-family: "Oxygen";
+  font-size: 0.9rem;
+}
+.tableWrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10px;
+  margin-left: 5px;
+  background-color: #262626;
+}
+.bottomBorder tr td {
+  border-bottom: 0px;
+}
+.t2 > tbody > tr > th,
+.t2 > tfoot > tr > th,
+.t2 > thead > tr > td,
+.t2 > tbody > tr > td,
+.t2 > tfoot > tr > td {
+  border-top: 0px;
+  border-top: 1px solid gray;
+}
+.t2 > thead > tr > th {
+  border-top: 0px;
+  border-bottom: 0px;
+}
+.secondTableFooter {
+  text-align: center;
+  color: #737373;
+  font-weight: 400;
+  font-family: "Oxygen";
+  margin-top: 30px;
+  padding-bottom: 33px;
+  margin-bottom: 0px;
+}
+.estimatedShipping {
+  color: #d9d9d9;
+  font-weight: 400;
+  font-family: "Oxygen";
+  font-size: 0.9rem;
+  margin-left: -10px;
+  margin-bottom: 0px;
+}
+.subtotal {
+  margin-bottom: 2px;
+  margin-left: -10px;
+  line-height: 2rem;
+  color: #d9d9d9;
+  font-weight: 400;
+  font-family: "Oxygen";
+}
+.tax {
+  margin-bottom: 0px;
+  margin-left: -10px;
+  line-height: 2rem;
+  color: #d9d9d9;
+  font-weight: 400;
+  font-family: "Oxygen";
+}
+.t1 {
+  margin-left: 0%;
+}
+.tableRed1 {
+  color: #dd003e;
+  font-weight: 400;
+  font-family: "Oxygen";
+  margin-left: -10px;
+  margin-bottom: 0px;
+  font-size: 1.2rem;
+}
+.orderTotal {
+  margin-bottom: 0px;
+  color: #d9d9d9;
+  font-weight: 400;
+  font-family: "Oxygen";
+  margin-left: -10px;
+  font-size: 1.1rem;
+}
+.secondTableRightText {
+  text-align: right;
+  margin-right: -10px;
+  color: #d9d9d9;
+  font-weight: 400;
+  font-family: "Oxygen";
+}
+.secondTableRightText1 {
+  color: #d9d9d9;
+  font-weight: 400;
+  font-family: "Oxygen";
+  text-align: right;
+  margin-right: -10px;
+  line-height: 2rem;
+  font-size: 0.9rem;
+}
+.orderTotalPrice {
+  color: #d9d9d9;
+  font-weight: 400;
+  font-family: "Oxygen";
+  text-align: right;
+  margin-right: -10px;
+}
+.underContinue3 {
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+  padding-bottom: 150px;
+}
+.labelText {
+  font-size: 0.7rem;
+}
+.r {
+  margin-top: 20px;
+}
+.rDebitCredit {
+  padding-top: 40px;
+}
+.cardNumber {
+  margin-bottom: 20px;
+}
+.grayText1 {
+  color: #737373;
+}
+@media only screen and (max-width: 500px) {
+  /* HEADER */
+  .vitrenix {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .phone {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .homeOrderNow {
+    margin: auto;
+    display: inline-block;
+  }
+  /* HEADER DO OVDE */
+  .rectangleText {
+    font-size: 2rem;
+    width: 100%;
+    line-height: 3rem;
+    padding-top: 20px;
+  }
+  .rectangleText1 {
+    width: 95%;
+    padding-top: 20px;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .whiteLine {
+    width: 100%;
+  }
+  .rectangleText2 {
+    font-size: 1rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .rectangle {
+    margin-top: 30px;
+  }
+  .text1 {
+    font-size: 3rem;
+  }
+  .rectangle1,
+  .rectangle2,
+  .rectangle3 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .buttonMobile,
+  .buttonv2 {
+    right: 0px;
+    left: 0px;
+    float: right;
+    padding-right: 5%;
+    bottom: 110px;
+  }
+  .startOrder {
+    font-size: 3rem;
+    padding-top: 0px;
+  }
+  .pinkLine {
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 50px;
+  }
+  .shippingInfoText {
+    text-align: center;
+    margin-left: 0px;
+    font-size: 2.5rem;
+  }
+  .paymenOptionText {
+    text-align: center;
+    margin-left: 0px;
+    font-size: 2.5rem;
+  }
+  .debitCreditText {
+    text-align: center;
+    margin-left: 0px;
+    font-size: 2.5rem;
+  }
+  .input1 {
+    width: 100%;
+  }
+  .r2 {
+    margin-top: 50px;
+  }
+  .r {
+    margin-top: 0px;
+  }
+  label {
+    padding-left: 0px;
+  }
+  .input2 {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .input3 {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .buttonContinue {
+    width: 80%;
+  }
+  /* FOOTER */
+  .lastFieldText {
+    text-align: center;
+  }
+  .phone1 {
+    display: block;
+    margin: auto;
+  }
+  .lastFieldText1 {
+    display: none;
+  }
+  .lastFieldText2 {
+    padding-left: 0px;
+    font-size: 0.7rem;
+    display: block;
+    text-align: center;
+    line-height: 1.2rem;
+  }
+  .phone1 {
+    margin-top: 20px;
+  }
+  /* FOOTER END */
+  .underContinue {
+    padding-bottom: 50px;
+  }
+  .ccNormal {
+    padding-right: 0px;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .ccSelected {
+    padding-right: 0px;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .paypalNormal {
+    padding-left: 0px;
+    display: block;
+    margin: auto;
+  }
+  .paypalSelected {
+    padding-left: 0px;
+    display: block;
+    margin: auto;
+  }
+  .r3 {
+    padding-bottom: 50px;
+  }
+  .i3 {
+    margin-top: 0px;
+  }
+  .tableText {
+    font-size: 0.9rem;
+    margin-left: -20px;
+  }
+  .tableText1 {
+    font-size: 0.6rem;
+    margin-left: -20px;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .rectangleText {
+    font-size: 1.5rem;
+  }
+  .rectangleText2 {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .tableText {
+    font-size: 0.8rem;
+    margin-left: -25px;
+  }
+  .tableText1 {
+    font-size: 0.5rem;
+    margin-left: -25px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .red1 {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .rectangleText {
+    font-size: 1.2rem;
+  }
+  .rectangleText2 {
+    font-size: 0.85rem;
+  }
+  .rectangleText1 {
+    width: 90%;
+  }
+  .buttonMobile,
+  .buttonv2 {
+    bottom: 100px;
+  }
+  .shippingInfoText {
+    font-size: 2rem;
+  }
+  .paymenOptionText {
+    font-size: 2rem;
+  }
+  .debitCreditText {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .startOrder {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .text1 {
+    font-size: 2.5rem;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .buttonMobile,
+  .buttonv2 {
+    width: 40%;
+    bottom: 95px;
+  }
+  .buttonMobile1 {
+    width: 100%;
+  }
+  .buttonContinue {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .lastFieldText {
+    font-size: 0.75rem;
+  }
+  .lastFieldText2 {
+    font-size: 0.6rem;
+  }
 }

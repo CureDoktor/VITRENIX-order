@@ -89,11 +89,18 @@ a:hover {
   bottom: 55px;
   left: 205px;
 }
+.oneMonth {
+  cursor: pointer;
+}
+.threeMonth {
+  cursor: pointer;
+}
 .oneMonth1 {
   display: none;
 }
 .sixMonth1 {
   display: none;
+  cursor: pointer;
 }
 .threeMonth1 {
   display: none;
@@ -253,10 +260,12 @@ label {
   padding-bottom: 100px;
 }
 .ccNormal {
-  padding-right: 15px;
+  margin-right: 15px;
+  cursor: pointer;
 }
 .paypalNormal {
-  padding-left: 15px;
+  margin-left: 0px;
+  cursor: pointer;
 }
 .ccSelected {
   padding-right: 15px;
@@ -585,7 +594,6 @@ tr td:nth-child(2) p {
   .ccSelected {
     padding-right: 0px;
     margin: auto;
-    display: block;
     margin-bottom: 30px;
   }
   .paypalNormal {
@@ -595,7 +603,6 @@ tr td:nth-child(2) p {
   }
   .paypalSelected {
     padding-left: 0px;
-    display: block;
     margin: auto;
   }
   .r3 {
@@ -691,4 +698,21 @@ tr td:nth-child(2) p {
   .lastFieldText2 {
     font-size: 0.6rem;
   }
+}
+
+[name="payment-options"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[name="payment-options"]:checked + label {
+  box-shadow: 0 0 0 3px red;
+}
+.label1 {
+  padding-left: 0px;
+}
+.label2 {
+  padding-left: 0px;
 }

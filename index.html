@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1.1">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/font bold/stylesheet.css">
     <script src="js/main.js"></script>
-    <title>VITRENIX - order</title>
+    <title>VITRENIX</title>
 </head>
 <body>
     <div class="wrapper">
@@ -52,7 +52,7 @@
                         <div class="sixMonth1" id="sixMonth1"  onclick="sixMonths()">
                             <img src="images/rectangle22.png" alt="rectangle1" class="rectangle2">
                             <img src="images/button.png" alt="button" class="button2 buttonMobile">
-                          </div>
+                        </div>
                     </div>
                     <div class="col-md-4">
                         <div class="threeMonth" id="threeMonth" onclick="threeMonths()">
@@ -219,12 +219,16 @@
                     </div>
                     <div class="row r3">
                         <div class="offset-md-2 col-md-4">
-                            <img src="images/ccNORMAL.png" alt="CC NORMAL" class="img-fluid ccNormal" id="ccNormal" onclick="creditCard()">
-                            <img src="images/ccSELECTED.png" alt="CC SELECTED" class="img-fluid ccSelected" id="ccSelected">
+                            <input type="radio" name="payment-options" id="credit-card-option" value="credit-card-option" checked>
+                            <label for="credit-card-option" class="label1">
+                                    <img src="images/ccNORMAL.png" class="img-fluid ccNormal">
+                            </label>
                         </div>
                         <div class="col-md-4">
-                            <img src="images/paypalNORMAL.png" alt="PAYPAL NORMAL" class="img-fluid paypalNormal" id="paypalNormal" onclick="paypal()">
-                            <img src="images/paypalSELECTED.png" alt="PAYPAL SELECTED" class="img-fluid paypalSelected" id="paypalSelected">
+                            <input type="radio" name="payment-options" id="paypal-option"  value="credit-card-option1">
+                            <label for="paypal-option" class="label2">
+                                <img src="images/paypalNORMAL.png" class="img-fluid paypalNormal">
+                            </label>
                         </div>
                     </div>
                     <button class="buttonContinue" onclick="partTwoContinue()">CONTINUE</button>
@@ -396,7 +400,7 @@
                             <img src="images/phone.png" alt="phone1" class="img-fluid phone1">
                             <p class="lastFieldText1"> <a href="https://www.vitrenix.com" class="grayText1">HOME</a> <span class="red1">|</span><a href="https://www.vitrenix.com/order" class="grayText1">ORDER</a></p>
                         </div>
-                        <p class="lastFieldText2"><a href="https://www.vitrenix.com" class="grayText1" >Privacy Policy</a> <span class="red1">|</span><a href="https://www.vitrenix.com" class="grayText1">Terms & Conditions</a> <span class="red1">|</span><a href="https://www.vitrenix.com/order" class="grayText1">Return Policy</a><span class="red1">|</span><a href="https://www.vitrenix.com/order" class="grayText1">DMCA</a> </p>
+                        <p class="lastFieldText2"><a href="https://www.vitrenix.com/privacy" class="grayText1" >Privacy Policy</a> <span class="red1">|</span><a href="https://www.vitrenix.com/terms" class="grayText1">Terms & Conditions</a> <span class="red1">|</span><a href="https://www.vitrenix.com/returnpolicy" class="grayText1">Return Policy</a><span class="red1">|</span><a href="https://www.vitrenix.com/dmca" class="grayText1">DMCA</a> </p>
                     </div>
                 </div>    
             </div>
